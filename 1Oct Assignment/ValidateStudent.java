@@ -21,9 +21,9 @@ public class ValidateStudentData {
 		String uri = XMLConstants.W3C_XML_SCHEMA_NS_URI;
 		SchemaFactory factory= SchemaFactory.newInstance(uri);
 		
-		Schema schema = factory.newSchema(new File("D:\\FileIO\\Student.xsd"));
+		Schema schema = factory.newSchema(new File("D:\\FileFileIO\\Student.xsd"));
 		Validator validator = schema.newValidator();
-		File file = new File("D:\\FileIO\\Student.xml");
+		File file = new File("D:\\FileFileIO\\Student.xml");
 		
 		DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = builderFactory.newDocumentBuilder();
